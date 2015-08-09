@@ -1,0 +1,172 @@
+html{
+  font-family: 'Lato', sans-serif;
+  font-size: 80%;
+
+}
+
+@media (-webkot-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+    html{
+      font-size: 120%;
+    }
+}
+
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+form{
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-header{
+  text-align: center;
+  background-color: #16210B;
+  color: white;
+  padding: 4em;
+}
+
+   .main-header h1 {
+     margin: 0;
+   }
+
+   .main-header h2{
+     font-size: 1rem;
+     font-weight: normal;
+   }
+
+/*
+@media all and (orientation: landscape) {
+  .main-header{
+    background-color: olive;
+  }
+}
+*/
+
+
+.card {
+  position: relative;
+  height: 30vh;
+  width: 100%;
+  background-size: cover;
+  color: white;
+  padding: .4em;
+  font-family: 'Lato', cursive;
+  padding: 10px;
+  background-color: #6BCFAA;
+  border-bottom: 2px solid #C7C7C7;
+}
+
+    .card--valencia{
+    }
+    .card[data-city="mv"]{
+    }
+
+    .card__title{
+      margin: 0;
+      margin-top: 15px;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .card__time{
+      margin: 0;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .card__date {
+      font-size: .7rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    @media all and(min-width: 28em){
+      .card{
+        background-position: center;
+      }
+    }
+
+    .card__info{
+      position: absolute;
+      bottom: .4em;
+      left: 13.5em;
+      text-align: center;
+    }
+
+    .card__image {
+      display: block;
+    }
+    .card__temp{
+      display: block;
+      font-size: 3rem;
+      line-height: 1;
+    }
+    .card__temp::after{
+      content: " °C"
+    }
+
+    .card__maxt{
+      color:red;
+    }
+
+        .card__maxt::before{
+          content: "Max: "
+        }
+
+        .card__maxt::after{
+              content: " °C "
+        }
+
+    .card__mint{
+      color: green;
+    }
+
+        .card__mint::before{
+          content: "Min: "
+        }
+
+        .card__mint::after{
+          content: " °C"
+        }
+
+.search{
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+}
+
+.search__text{
+  margin: 0px;
+  width: 35%;
+  height: 3rem;
+  font-family: cursive;
+  text-align: left;
+  color: black;
+  aling: center;
+}
+
+
+
+.search__btn{
+  color: white;
+  background-color: #44826B;
+  width: 30%;
+  height: 3.5rem;
+  border: none;
+  font-family: cursive;
+  text-align:center;
+  margin: 0px;
+}
+
+
+
+.loader {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+

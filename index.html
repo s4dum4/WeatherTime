@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plarzi Weather</title>
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+	<header class="main-header">
+		<h1>Platzi Weather</h1>
+		<h2>An awesome way to see how we burn by global warming</h2>
+		
+	</header>
+
+	<div class="loader">Geolocalizando tu posición, por favor espere...</div>
+<!-- VAMOS A UTILIZAR AJAX POR ESO EL ACTION ESTA VACIO  -->
+	<form action="" class="search">
+		<input type="text" data-input="cityAdd" class="search__text" placeholder="Agregar una nueva ciudad">
+		<input data-button="add" class="search__btn" type="submit"   value="Añadir una nueva ciudad">
+		<button data-saved-cities class="search__btn">Ver ciudades guardadas</button>
+	</form>
+
+	<main class="cards-group">
+		<template id="template--city">
+		    <div class="card">  <!-- aca wakkos puso un modificador de valencia card--valencia -->
+			    <header class="card__header">
+				<h3 data-city class="card__title"></h3>
+				<h4 data-time class="card__time"></h4>  <!-- aca wakkos lo puse card__date -->
+			    </header>
+
+			  <div class="card__info">
+				<img data-icon class="card__image" src="" alt="" >
+				<span data-temp="max" class="card__maxt"></span>
+				<span data-temp="min" class="card__mint"></span>
+				<span data-temp="current" class="card__temp"></span>
+			  </div>
+			
+		    </div>
+	    </template>
+	</main>	 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
